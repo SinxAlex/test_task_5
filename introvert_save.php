@@ -8,12 +8,7 @@ $cookieData = array();
 if(isset($_COOKIE['introvert_cookie'])) {
     $cookieData = json_decode($_COOKIE['introvert_cookie'], true) ?: array(); // данные сохраняемые js скриптом
 }
-
-
 $postArr = array_merge($cookieData, $_POST); // $_POST данные отправленной формы
-echo '<pre>';
-var_dump($postArr);
-echo '</pre>';
 if (function_exists('curl_init')) {
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_URL, $introvertUrl);
