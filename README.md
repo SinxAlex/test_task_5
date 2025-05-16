@@ -2,9 +2,7 @@
 
 
 ## Результат скрипта
-![Скриншот](docs/img/1.png)
-![Скриншот](docs/img/2.png)
-![Скриншот](docs/img/3.png)
+![Скриншот](docs/img/screen.png)
 
 ## Установка в docker
    ```docker 
