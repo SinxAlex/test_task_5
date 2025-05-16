@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Двойная контактная форма</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .form-container {
+            margin-bottom: 20px;
+        }
+        .form-title {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown link
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container mt-5">
+    <div class="row">
+        <!-- Форма 1 -->
+        <div class="col-md-6">
+            <div class="form-container">
+                <div class="form-title">Форма 1 (leads_1)</div>
+                <form id="form1" action="/index.php" method="POST">
+                    <div class="mb-3">
+                        <label for="leads_1_name" class="form-label">Имя</label>
+                        <input type="text" class="form-control" id="leads_1_name" name="name" required placeholder="Введите имя">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="leads_1_phone" class="form-label">Телефон</label>
+                        <input type="tel" class="form-control" id="leads_1_phone" name="phone" required placeholder="+7 (999) 123-45-67">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="leads_1_email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="leads_1_email" name="emaill" required placeholder="example@mail.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="intr_group_lead_1" class="form-label">Отвественный ID[8967010,9406486,3001336]</label>
+                        <input type="tel" class="form-control" id="intr_group_lead_1" name="intr_group" required placeholder="int_group">
+                    </div>
+                    <div class="mb-3">
+                        <label for="leads_1_comment" class="form-label">Комментарий</label>
+                        <textarea class="form-control" id="leads_1_comment" name="comment" rows="3" placeholder="Ваш комментарий"></textarea>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Отправить форму 1</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Форма 2 -->
+        <div class="col-md-6">
+            <div class="form-container">
+                <div class="form-title">Форма 2 (leads_2)</div>
+           <form id="form2" method="POST" action="/index.php">
+                    <div class="mb-3">
+                        <label for="leads_2_name" class="form-label">Имя</label>
+                        <input type="text" class="form-control" id="leads_2_name" name="name" required placeholder="Введите имя">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="leads_2_phone" class="form-label">Телефон</label>
+                        <input type="tel" class="form-control" id="leads_2_phone" name="phone" required placeholder="+7 (999) 123-45-67">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="leads_2_email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="leads_2_email" name="email" required placeholder="example@mail.com">
+                    </div>
+               <div class="mb-3">
+                   <input class="form-control" id="leads_2_status" name="status"  value="46140772" hidden="hidden" placeholder="Статус">
+               </div>
+               <div class="mb-3">
+                   <label for="intr_group_lead_2" class="form-label">Отвественный ID[1240231,6750430,797280]</label>
+                   <input type="tel" class="form-control" id="intr_group_lead_2" name="intr_group" required placeholder="int_group">
+               </div>
+                    <div class="mb-3">
+                        <label for="leads_2_comment" class="form-label">Комментарий</label>
+                        <textarea class="form-control" id="leads_2_comment" name="comment" rows="3" placeholder="Ваш комментарий"></textarea>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Отправить форму 2</button>
+                    </div>
+                </form>-
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+
+</script>
+</body>
+</html>
