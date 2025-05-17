@@ -12,9 +12,6 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) &&
 
     header('Content-Type: application/json');
 
-    $data=new \IntrovertTest\IntrovertApi('fga_date','2025-05-15',[24374824,57202302,247654035]);
-
-    echo  $data->returnJsonData();
     exit();
 }
 
